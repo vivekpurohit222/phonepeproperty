@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Lead_type"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    tools:context=".Forms.Add_Leads">
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lead_name"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone:"
+        android:layout_marginTop="8dp"
+        />
+
+
+
+    <EditText
+        android:id="@+id/lead_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address:"
+
+        android:layout_marginTop="8dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lead_Address"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address:"
+        android:layout_marginTop="8dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lead_emailaddress"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project Name:"
+        android:layout_marginTop="8dp"
+
+        />
+
+    <Spinner
+        android:id="@+id/lead_projectname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:tooltipText="Select" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interested:"
+        android:layout_marginTop="8dp"
+
+        />
+
+    <Spinner
+        android:id="@+id/lead_interested"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:tooltipText="Select" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Client Reply:"
+        android:layout_marginTop="8dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lead_clientreply"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Status:"
+        android:layout_marginTop="8dp"
+
+        />
+    <Spinner
+        android:id="@+id/lead_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:tooltipText="Select" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Source:"
+        android:layout_marginTop="8dp"
+
+        />
+    <Spinner
+        android:id="@+id/lead_source"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:tooltipText="Select" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assigned:"
+        android:layout_marginTop="8dp"
+
+        />
+
+    <Spinner
+        android:id="@+id/lead_assigned"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:tooltipText="Select" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save"
+            android:id="@+id/lead_save"
+            android:paddingLeft="20dp"
+            android:padding="20dp"
+            android:paddingRight="10dp"
+            android:background="#ff5a92"
+            android:textColor="#ffffff"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="cancel"
+            android:id="@+id/lead_cancel"
+            android:paddingLeft="10dp"
+            android:padding="20dp"
+            android:paddingRight="20dp"
+            android:textColor="#ffffff"
+            android:background="#ff5a92"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>

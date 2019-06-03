@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Forms.AddNewTask"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+          <Button
+              android:layout_width="wrap_content"
+             android:text="Attach File"
+              android:layout_height="match_parent"
+              android:id="@+id/task_attechfile"
+              android:paddingRight="20dp"
+              android:layout_marginTop="10dp"
+              android:layout_marginBottom="10dp"
+              android:background="#ff5a92"
+              android:textColor="#ffffff"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Subject:"
+            android:textColor="#808080"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/task_subject"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Hourly Rate:"
+            android:textColor="#808080"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:id="@+id/task_hourlyrate" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Start Date:"
+                android:layout_height="match_parent"
+
+                android:textColor="#808080"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Due Date:"
+                android:layout_height="match_parent"
+
+                android:textColor="#808080"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+        >
+
+            <EditText
+                android:id="@+id/task_startdate"
+                android:layout_width="8dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Start Date"
+                android:onClick="onClick" />
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Due Date"
+                android:id="@+id/task_duedate"
+                android:onClick="onClick"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="125dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Priority:"
+                android:textColor="#808080"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:text="Repeat every:"
+                android:layout_height="match_parent"
+                android:textColor="#808080"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <Spinner
+                android:id="@+id/task_priority"
+                android:layout_width="8dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tooltipText="20dp"
+                android:maxLines="1"
+                style="@style/Priority"/>
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:maxLines="1"
+                style="@style/Repeatevery"
+
+
+                android:id="@+id/task_repeatevery"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Related To:"
+            android:layout_marginTop="10dp"
+            android:textColor="#808080"/>
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/task_relatedto"
+            android:maxLines="1"
+            style="@style/Relatedto"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Task Description:"
+            android:layout_marginTop="10dp"
+            android:textColor="#808080"/>
+
+        <EditText
+            android:id="@+id/task_taskdescription"
+            android:layout_width="match_parent"
+
+            android:layout_height="100dp"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/task_save"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:background="#ff5a92"
+                android:paddingLeft="20dp"
+                android:padding="20dp"
+                android:paddingRight="10dp"
+                android:textColor="#ffffff"/>
+
+            <Button
+                android:id="@+id/task_cancel"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="cancel"
+                android:layout_marginLeft="5dp"
+                android:paddingLeft="10dp"
+                android:padding="20dp"
+                android:paddingRight="20dp"
+                android:background="#ff5a92"
+                android:textColor="#ffffff"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
